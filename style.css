@@ -100,7 +100,7 @@ html{
 }
 
 .math-img-div{
-    background-image: url(../site/images/background_vert.png);
+    background-image: url(/images/background_vert.png);
     background-repeat: no-repeat;
     margin-bottom: 5px;
     width: 100%;
@@ -113,7 +113,7 @@ html{
 }
 
 .nsi-img-div{
-    background-image: url(../site/images/background_test.png);
+    background-image: url(/images/background_test.png);
 	width: 100%;
     border-radius: 10px;
 }
@@ -124,7 +124,7 @@ html{
 }
 
 .emc-img-div{
-    background-image: url(../site/images/background_vert.png);
+    background-image: url(/images/background_vert.png);
 	width: 100%;
     border-radius: 10px;
 }
@@ -135,7 +135,7 @@ html{
 }
 
 .hist-img-div{
-    background-image: url(../site/images/background_or.png);
+    background-image: url(/images/background_or.png);
     width: 100%;
     border-radius: 10px;
 }
@@ -146,7 +146,7 @@ html{
 }
 
 .ens-img-div{
-    background-image: url(../site/images/background_red.png);
+    background-image: url(/images/background_red.png);
     width: 100%;
     border-radius: 10px;
 }
@@ -157,7 +157,7 @@ html{
 }
 
 .geo-img-div{
-    background-image: url(../site/images/background_or.png);
+    background-image: url(/images/background_or.png);
     width: 100%;
     border-radius: 10px;
 }
@@ -168,7 +168,7 @@ html{
 }
 
 .all-img-div{
-    background-image: url(../site/images/background_vert.png);
+    background-image: url(/images/background_vert.png);
     width: 100%;
     border-radius: 10px;
 }
@@ -179,7 +179,7 @@ html{
 }
 
 .philo-img-div{
-    background-image: url(../site/images/background_test.png);
+    background-image: url(/images/background_test.png);
     width: 100%;
     border-radius: 10px;
 }
@@ -190,7 +190,7 @@ html{
 }
 
 .MAE-img-div{
-    background-image: url(../site/images/background_red.png);
+    background-image: url(/images/background_red.png);
     width: 100%;
     border-radius: 10px;
 }
