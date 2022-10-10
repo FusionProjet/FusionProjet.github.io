@@ -51,14 +51,14 @@ html{
 
 .container {
 	width: 1000px;
-    height: 200px;
-    max-height: 220px;
-    position: relative;
+    	height: 200px;
+    	max-height: 220px;
+    	position: relative;
 	display: flex;
 	gap: 15%;
 	flex-flow: row wrap;
-    margin: auto;
-    padding: 15% 1em 1em 1em;
+    	margin: auto;
+    	padding: 15% 1em 1em 1em;
 
 }
 
