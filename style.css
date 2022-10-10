@@ -18,7 +18,7 @@ body {
 .GRAD {
 	width: 50%;
 	height: 20%;
-	padding-top: 23.8%;
+	padding-top: 27.8%;
 	padding-left: 50%;
 }
 
@@ -58,7 +58,7 @@ html{
 	gap: 15%;
 	flex-flow: row wrap;
     	margin: auto;
-    	padding: 35% 1em 1em 1em;
+    	padding: 30% 1em 1em 1em;
 
 }
 
