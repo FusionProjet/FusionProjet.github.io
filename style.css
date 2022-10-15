@@ -50,7 +50,7 @@ html{
 }
 
 .container {
-	width: 1000px;
+	width: 1255px;
     	height: 200px;
     	max-height: 220px;
     	position: relative;
@@ -58,7 +58,7 @@ html{
 	gap: 15%;
 	flex-flow: row wrap;
     	margin: auto;
-    	padding: 30% 1em 1em 1em;
+    	padding: 15% 1em 1em 1em;
 
 }
 
