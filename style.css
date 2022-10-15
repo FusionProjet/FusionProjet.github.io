@@ -45,36 +45,6 @@ html{
 }
 
 
-@media (width <=900px) {
-	.container {
-		width: 1000px;
-    		height: 200px;
-    		max-height: 220px;
-    		position: relative;
-		display: flex;
-		gap: 20%;
-		flex-flow: row wrap;
-    		margin: auto;
-    		padding: 50% 1em 1em 1em;
-	}
-	
-	.card-div {
-		flex: 1;
-	    	display: flex;
-	    	width: 100%;
-		height: 110%;
-	    	flex-direction: column;
-	    	justify-items: center;
-	    	align-items: center;
-	    	background-color: #ffffff;
-	    	box-sizing: border-box;
-	    	border-radius: 10px;
-	    	box-shadow: 0 10px 10px rgba(0,0,0,0.12), 0 5px 10px rgba(0,0,0,0.24);
-	   	transition: transform 0.7s ease-in-out;
-	   	margin-bottom: 10%;
-	}
-}
-
 .container input{
     display: none;
 }
@@ -107,6 +77,38 @@ html{
     	box-shadow: 0 10px 10px rgba(0,0,0,0.12), 0 5px 10px rgba(0,0,0,0.24);
     	transition: transform 0.7s ease-in-out;
     	margin-bottom: 10%;
+}
+
+@media (max-width: 1200px) {
+	.container {
+		width: 1000px;
+    	height: 200px;
+    	max-height: 220px;
+    	position: relative;
+		display: flex;
+		gap: 15%;
+		flex-flow: row wrap;
+    	margin: auto;
+    	padding: 100% 1em 1em 1em;
+    	padding-left: 10%;
+    	padding-top: 170%;
+	}
+
+	.card-div{
+		flex: 1;
+	    display: flex;
+	    width: 100%;
+		height: 110%;
+	    flex-direction: column;
+	    justify-items: center;
+	    align-items: center;
+	    background-color: #ffffff;
+	    box-sizing: border-box;
+	    border-radius: 10px;
+	    box-shadow: 0 10px 10px rgba(0,0,0,0.12), 0 5px 10px rgba(0,0,0,0.24);
+	    transition: transform 0.7s ease-in-out;
+	    margin-bottom: 10%;
+	}
 }
 
 /* ======== General styling of all cards========== */
