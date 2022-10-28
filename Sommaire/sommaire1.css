@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;700;800;900&display=swap');
+
+body {
+   background: #23333a;
+   font: 1em "Raleway", "Raleway";
+   display: flex;
+   justify-content: center;
+   align-content: center;
+}
+
+h1 {
+  position: absolute;
+  color: white;
+  padding-top: 2%;
+}
+
+ .Boite {
+   padding-top: 150px;
+   width: 550px;
+   flex-direction: column;
+}
+
+/* ---------- Bouton ---------- */
+
+ .Bouton span {
+   position: relative;
+   display: inline-flex;
+   width: 180px;
+   height: 55px;
+   margin: 15px 0px -15px 0px;
+   perspective: 1000px;
+}
+ .Bouton span a {
+   font-size: 19px;
+   letter-spacing: 1px;
+   transform-style: preserve-3d;
+   transform: translateZ(-25px);
+   transition: transform 0.25s;
+   font-family: 'Raleway', sans-serif;
+}
+ .Bouton span a:before, span a:after {
+   position: absolute;
+   height: 55px;
+   width: 190px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border: 5px solid #14822d;
+   box-sizing: border-box;
+   border-radius: 10px;
+}
+ .Bo1 span a:before, span a:after, .Bo1 span a:after, span a:before {
+   content: "DENOMBREMENT";
+}
+ .Bo2 span a:before, span a:after, .Bo2 span a:after, span a:before {
+   content: "PARTIE";
+}
+ .Bo3 span a:before, span a:after, .Bo3 span a:after, span a:before {
+   content: "RECCURENCE";
+}
+ .Bouton span a:before {
+   color: #fff;
+   background: #14962d;
+   transform: rotateY(0deg) translateZ(25px);
+}
+ .Bouton span a:after {
+   color: #000;
+   transform: rotateX(90deg) translateZ(25px);
+}
+ .Bouton span a:hover {
+   transform: translateZ(-25px) rotateX(-90deg);
+}
+
+/** ------------ Conteneur ------------**/
+
+ details {
+   color: white;
+   width: 467px;
+   transition: all 0.5s cubic-bezier(0.85, -1, 0.1, 1);
+   background: #678;
+   border-radius: 1.5em;
+   padding: calc(1.5em/1.5);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   perspective: 600px;
+   box-shadow: 0 -0.5em 1em rgba(0, 0, 0, 0.5), 0 0.3em 0.1em rgba(0, 0, 0, 0.2);
+   margin-bottom: 2em;
+   overflow: hidden;
+}
+ summary {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   outline: none;
+   border-radius: calc(1.5em/2);
+   text-align: center;
+   cursor: default;
+}
+ details:not([open]) {
+   box-shadow: 0 1em 2em rgba(0, 0, 0, 0.5);
+   transform: translateY(1em) rotate(1deg);
+   width: 50%;
+}
+ details:not([open]) > summary:after, details:not([open]) > summary:before {
+   width: 0;
+   background: rgba(0, 0, 0, 0);
+}
+ details:not([open]) > summary {
+   transition: background-color 0.5s;
+   background: rgba(0, 0, 0, 0.5);
+   transition-delay: 0.5s;
+}
+ details[open] {
+   transform: translatey(1em);
+   margin-top: 0;
+   text-align: center;
+}
+ details[open] > summary:after, details[open] > summary:before {
+   width: 60%;
+}
+ details[open] > summary {
+   transition-delay: 0.5s;
+   transition: background-color 0.5s;
+   background: rgba(0, 0, 0, 0.2);
+}
+ .one:not([open]) {
+   width: 90%;
+   transform: translateY(1em) rotate(0deg);
+   margin-top: 1em;
+}
+ details.three[open] {
+   margin-top: 1.2em;
+}
+ details.three[open] > blockquote {
+   color: #333;
+}
+ .one {
+   width: 500px;
+   background-color: #456;
+}
+ .three {
+   width: 435px;
+   background: #3cc83c;
+}
+ summary::-webkit-details-marker {
+   display: none;
+}
+ summary::before, summary::after {
+   content: "";
+   background: rgba(0, 0, 0, 0.4);
+   padding: calc(1.5em/2);
+   border-radius: 1.5em;
+   transition-duration: 0.5s;
+   margin: 0 calc(1.5em/3);
+}
+ summary::before {
+   left: calc(1.5em/1);
+}
+ summary::after {
+   right: calc(1.5em/1);
+}
+ 
