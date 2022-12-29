@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fusion - Loi binomial</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://kit.fontawesome.com/0c87a70838.js"></script>
+		<link rel="stylesheet" type="text/css" href="binobern.css">
+	</head>
+	<body>
+		<div class="menu">
+	      <header>
+	      <a href="../index.html" class="logo"><img src="../images/Fusionlogo.png"/></a>
+	      <input type="checkbox" id="menu-btn" class="menu-btn">
+	      <label for="menu-btn" class="menu-icon"><span class="menu-icon__line"></span></label>
+	      <ul class="nav-links">
+	        <li class="nav-link"><a href="#">A propos</a></li>
+	        <li class="nav-link"><a href="#">Cours</a></li>
+	      </ul>
+	      </header>
+	    </div>
+	    <h1 class="Titre"><strong>Probabilité : Binomial, Bernoulli</strong></h1>
+	    <h2>1) Épreuve de Bernoulli</h2>
+  		<div class="rounded-box"><strong class="def">Définition :</strong> Une épreuve de Bernoulli de paramètre <i>p</i> est une expérience aléatoire à deux issues dont l’une est appelée "succès" et a pour probabilité <i>p</i>, et l’autre appelée "l'échec" de probabilité 1-<i>p</i><br><br>La variable aléatoire qui prend la valeur 1 en cas de succès, et 0 en cas d'échec est appelée <strong>variable aléatoire de Bernoulli.</strong><br><br>La loi de probabilité de cette variable aléatoire est appelée <strong>loi de Bernoulli de paramètre <i>p</i>.</strong> Exemple de tableau de Bernoulli<br><br>
+  		<table>
+		  <tr>
+		    <th><i>a</i></th>
+		    <th>0</th>
+		    <th>1</th>
+		  </tr>
+		  <tr>
+		    <td><i>P</i>(X = <i>a</i>)</td>
+		    <td>1 - <i>p</i></td>
+		    <td><i>p</i></td>
+		  </tr>
+		</table>
+		</div>
+		<div class="rounded-box2"><strong class="def">Exemple 1 :</strong> on lance un dé équilibré, le succès est "obtenir un 6".<br><br> Il s'agit d'une épreuve de Bernoulli de paramètre <i>p</i> = 1/6</div>
+		<div class="separator"></div><br><br><br>
+  		<div class="rounded-box"><strong class="def">Propriétés :</strong> Soit X une variable aléatoire qui suit la loi de Bernoulli de paramètre <i>p</i>. On a : <br><br>- L'espérance E(X) = <i>p</i><br><br>- La variance V(X) = <i>p</i>( 1 - <i>p</i> )<br><br>- L'écart-type σ(X) = sqrt( <i>p</i>( 1 - <i>p</i>) )</div>
+  		<div class="rounded-box2"><strong class="def">Exemple 2 :</strong> Soit X la variable aléatoire qui suit la loi de Bernoulli de paramètre <i>p</i> = 1/6 <br><br>- E(X) = 1/6<br><br>- V(X) = 1/6(1 - 1/6) = 1/6×5/6 = 5/36<br><br>σ(X) = sqrt( V(X) ) = sqrt( 5/36 ) = sqrt(5)/6</div>
+		<div class="separator"></div><br><br><br>
+  		<div class="rounded-box"><strong class="def">Définition :</strong> Un <strong>schéma de Bernoulli de paramètre <i>n</i> et <i>p</i></strong> est une répétition de n épreuves de Bernoulli de paramètre <i>p</i>, <strong>identiques</strong> et <strong>indépendantes</strong>.</div>
+  		<div class="rounded-box2"><strong class="def">Exemple 3 :</strong> on lance un dé équilibré 2 fois, et on note le nombre de 6 obtenus.<br><br>- Il y a <strong>répétition</strong> d'épreuves de Bernoulli de paramètre <i>p</i> = 1/6 <strong>identiques</strong> et <strong>indépendantes</strong> donc on est en présence d'un schéma de Bernoulli de paramètre <i>n</i> = 2 et <i>p</i> = 1/6
+  		<br><br><br><br><span class="Astuce"><strong>Important :</strong> phrase à connaître et a récité à chaque fois que l'on croise une répétition d'épreuves de Bernoulli</span></div>
+  		<br><br>
+  		<h2>2) La loi binomial</h2>
+  		<div class="rounded-box"><strong class="def">Définition :</strong> On considère un schéma de Bernoulli de paramètre <i>n</i> et <i>p</i> et on note la variable aléatoire égale au nombre de succès au cours de <i>n</i> épreuves<br><br>X est donc à valeurs dans { 0 ; 1 ; 2 ; ... ; <i>n</i> }<br><br>On dit que la variable aléatoire X suit la loi binomiale de paramètres <i>n</i> et <i>p</i>. On la note <i>B</i>( <i>n</i> ; <i>p</i> )</div>
+  		<div class="rounded-box"><strong class="def">Propriété :</strong> Soit X une variable aléatoire qui suit une loi binomiale de paramètre <i>n</i> et <i>p</i>. Alors la probabilité que X soit égale à <i>k</i> le nombre de succès est : <i>P</i>( X = <i>k</i> ) = <i>k</i> parmis <i>n</i> (nombre de chemin a <i>k</i> succès ) × <i>p</i><sup><i> k</i></sup> × ( 1 - <i>p</i> )<sup><i>n</i> - <i>k</i></sup></div>
+  		<div class="rounded-box2"><strong class="def">Exemple 1 :</strong> On lance deux fois un dé équilibré. X est la variable aléatoire égale au nombre de 6 obtenus. <br>- Quelle est la probabilité d'obtenir un 6 exactement ? <br><br>Il y a <strong>répétition</strong> de 2 épreuves de Bernoulli de paramètre <i>p</i> = 1/6 <strong>identiques</strong> et <strong>indépendantes</strong> donc on est en présence d'un schéma de Bernoulli de paramètre <i>n</i> = 2 et <i>p</i> = 1/6, X la variable aléatoire égale au nombre nombre de succès suit donc la loi binomiale de paramètre <i>n</i> = 2 et <i>p</i> = 1/6<br><br>Donc <i>P</i>(X = 1) = 1 parmis 2 × (1/6)<sup>1</sup> × (1 - 1/6 )<sup>1</sup><br>= <i>P</i>( X = 1 ) = 2 × 1/6 × 5/6 = 5/18 </div>
+	</body>
+</html>

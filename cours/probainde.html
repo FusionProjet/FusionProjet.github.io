@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fusion - Loi binomial</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://kit.fontawesome.com/0c87a70838.js"></script>
+		<link rel="stylesheet" type="text/css" href="probainde.css">
+	</head>
+	<body>
+		<div class="menu">
+	      <header>
+	      <a href="../index.html" class="logo"><img src="../images/Fusionlogo.png"/></a>
+	      <input type="checkbox" id="menu-btn" class="menu-btn">
+	      <label for="menu-btn" class="menu-icon"><span class="menu-icon__line"></span></label>
+	      <ul class="nav-links">
+	        <li class="nav-link"><a href="#">A propos</a></li>
+	        <li class="nav-link"><a href="#">Cours</a></li>
+	      </ul>
+	      </header>
+	    </div>
+	    <h1 class="Titre"><strong>Probabilité : Probabilités indépendantes</strong></h1>
+	    <h2>1) Les épreuves indépendantes</h2>
+  		<div class="rounded-box"><strong>Définition :</strong> Deux expérience sont dites indépendantes si le résultat de l’une n’a aucun impacte sur le résultat de l’autre.</div>
+  		<div class="rounded-box"><strong>Propriétés :</strong> La succession de n épreuves indépendantes d’univers respectifs E<sub>1</sub> , E<sub>2</sub> , ... , E<sub>n</sub> a pour univers le produit cartésien E<sub>1</sub> X E<sub>2</sub> X ... X E<sub>n</sub>.<br><br>- Les issues sont les n-uplets (x<sub>1</sub> ; x<sub>2</sub> ; ... ; x<sub>n</sub>) où x<sub>1</sub> appartient à E<sub>1</sub>,  x<sub>2</sub> appartient à E<sub>2</sub> etc.<br><br>- La probabilité d’une issue (x<sub>1</sub> ; x<sub>2</sub> ; ... ; x<sub>n</sub> ) est égale au produit des probabilités des issues x<sub>1</sub>, x<sub>2</sub>, ... , x<sub>n</sub> qui la composent.<br><br>En autre terme si l'on considère <i>A</i> et <i>B</i> deux événements de deux univers différents <i>p</i>( <i>A</i>∩<i>B</i> ) = <i>p</i>(<i>A</i>) × <i>p</i>(<i>B</i>)</div>
+  		<div class="separator"></div>
+  		<div class="rounded-box2"><strong><span>Exemple 1 :</span></strong> On lance un dé non truqué à 6 faces et on note le numéro obtenu, chaque lancer de dés est une épreuve indépendante car la premier lancer n'a aucune conséquence sur le deuxième lancer</div>
+  		<div class="rounded-box2"><strong><span>Exemple d'exercice :</span></strong> Au bowling, la probabilité que Mike renverse toutes les quilles en un seul lancer de boule est égale à 0,6<br>Mike effectue 3 lancers successifs, <strong>indépendants</strong> les uns des autres.<br><br>On défini S le succès qui est "Effectue un strike" et T pour "N'effectue pas de strike"<br><br>On cherche <i>p</i>(<i>A</i>) = Mike effectue 3 strikes.<br><br>donc on cherche <i>p</i>(<i>A</i>) avec <i>A</i> = {SSS}<br>- <i>p</i>(<i>A</i>) = 0.6×0.6×0.6 &nbsp; &nbsp; car les lancers sont indépendants.<br>- <i>p</i>(<i>A</i>) = 0.216<br><br><strong>La probabilité que Mike effectue 3 strikes en 3 lancers est de 0.216</strong><br><br><br>On cherche <i>p</i>(<i>B</i>) = Mike effectue exactement 2 strikes<br><br>Donc on cherche <i>p</i>(<i>B</i>) avec <i>B</i> = {SST ; STS ; TSS}<br>- <i>p</i>(<i>B</i>) = 0.6×0.6×0.4 + 0.6×0.4×0.6 + 0.4×0.6×0.6<br>- <i>p</i>(<i>B</i>) = 3×0.6<sup>2</sup>×0.4<sup>1</sup> = 0.432<br><br><strong>La probabilité que Mike effectue exactement 2 strikes en 3 lancers est de 0.432</strong><br><br><br><br><span class="Astuce">Astuce : Dans ce genre d'éxercice il est préférable de construire et de s'aider d'un arbre pondéré afin de mieux lire les probabilités ainsi que les issues</span></div>
+	</body>
+</html>
