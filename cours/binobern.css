@@ -128,8 +128,76 @@ body {
   }
 }
 
+.Titre {
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  margin-bottom: 100px;
+}
 
- @media screen and (max-width: 800px) {
+h2 {
+  font-size: 35px;
+  color: white;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.rounded-box {
+  position: relative;
+  margin-top: 120px;
+  background-color: #25843a;
+  border-radius: 10px;
+  padding: 30px;
+  color: #fff;
+  width: 30%; /* Optionnel, définit la largeur du carré */
+  margin: auto;
+  margin-bottom: 25px ;
+}
+
+.separator {
+  margin: auto;
+  height: 1px; /* Définit la hauteur de la ligne */
+  width: 50%; /* Définit la largeur de la ligne */
+  background-color: #25843a; /* Définit la couleur de la ligne */
+}
+
+.rounded-box2 {
+  position: relative;
+  margin-top: 120px;
+  background-color: #23333a;
+  border-radius: 10px;
+  padding: 30px;
+  color: #fff;
+  width: 30%; /* Optionnel, définit la largeur du carré */
+  margin: auto;
+  margin-bottom: 35px;
+}
+
+.rounded-box .def {
+  font-size: 20px;
+}
+
+
+.rounded-box2 .Astuce {
+  color: red;
+}
+
+
+i {
+  font-family: Liberation;
+  font-size: 17px;
+}
+
+table {
+  border-collapse: collapse; /* Supprime les bordures doubles entre les cellules */
+}
+
+th, td {
+  border: 1px solid #000; /* Ajoute une bordure autour des cellules */
+  padding: 10px; /* Ajoute de l'espace à l'intérieur des cellules */
+}
+
+@media screen and (max-width: 1000px) {
    header .nav-links {
      position: absolute;
      top: 0;
@@ -210,74 +278,68 @@ body {
    header .menu-btn:checked ~ .nav-links .nav-link:nth-of-type(3) {
      transition-delay: 0.9s;
   }
-}
 
 
-.Titre {
-  font-size: 50px;
+  .Titre {
+  font-size: 25px;
   color: white;
   text-align: center;
   margin-bottom: 100px;
 }
 
-h2 {
-  font-size: 35px;
-  color: white;
-  text-align: center;
-  margin-bottom: 100px;
-}
-
-.rounded-box {
-  position: relative;
-  margin-top: 120px;
-  background-color: #25843a;
-  border-radius: 10px;
-  padding: 30px;
-  color: #fff;
-  width: 30%; /* Optionnel, définit la largeur du carré */
-  margin: auto;
-  margin-bottom: 25px ;
-}
-
-.separator {
-  margin: auto;
-  height: 1px; /* Définit la hauteur de la ligne */
-  width: 50%; /* Définit la largeur de la ligne */
-  background-color: #25843a; /* Définit la couleur de la ligne */
-}
-
-.rounded-box2 {
-  position: relative;
-  margin-top: 120px;
-  background-color: #23333a;
-  border-radius: 10px;
-  padding: 30px;
-  color: #fff;
-  width: 30%; /* Optionnel, définit la largeur du carré */
-  margin: auto;
-  margin-bottom: 35px;
-}
-
-.rounded-box .def {
-  font-size: 20px;
-}
+  h2 {
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    margin-bottom: 100px;
+  }
 
 
-.rounded-box2 .Astuce {
-  color: red;
-}
+  .rounded-box {
+    font-size: 15px;
+    position: relative;
+    margin-top: 120px;
+    background-color: #25843a;
+    border-radius: 10px;
+    padding: 30px;
+    color: #fff;
+    width: 75%; /* Optionnel, définit la largeur du carré */
+    margin: auto;
+    margin-bottom: 25px ;
+  }
+
+  .separator {
+    margin: auto;
+    height: 1px; /* Définit la hauteur de la ligne */
+    width: 75%; /* Définit la largeur de la ligne */
+    background-color: #25843a; /* Définit la couleur de la ligne */
+  }
+
+  .rounded-box2 {
+    font-size: 15px;
+    position: relative;
+    margin-top: 120px;
+    background-color: #23333a;
+    border-radius: 10px;
+    padding: 30px;
+    color: #fff;
+    width: 75%; /* Optionnel, définit la largeur du carré */
+    margin: auto;
+    margin-bottom: 35px;
+  }
+
+  .rounded-box .def {
+    font-size: 17px;
+  }
 
 
-i {
-  font-family: Liberation;
-  font-size: 17px;
-}
+  .rounded-box2 .Astuce {
+    color: red;
+  }
 
-table {
-  border-collapse: collapse; /* Supprime les bordures doubles entre les cellules */
-}
 
-th, td {
-  border: 1px solid #000; /* Ajoute une bordure autour des cellules */
-  padding: 10px; /* Ajoute de l'espace à l'intérieur des cellules */
+  i {
+    font-family: Liberation;
+    font-size: 17px;
+  }
 }

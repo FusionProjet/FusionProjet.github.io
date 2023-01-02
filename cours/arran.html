@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fusion - Arrangements</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://kit.fontawesome.com/0c87a70838.js"></script>
+		<link rel="stylesheet" type="text/css" href="binobern.css">
+	</head>
+	<body>
+		<div class="menu">
+	      <header>
+	      <a href="../index.html" class="logo"><img src="../images/Fusionlogo.png"/></a>
+	      <input type="checkbox" id="menu-btn" class="menu-btn">
+	      <label for="menu-btn" class="menu-icon"><span class="menu-icon__line"></span></label>
+	      <ul class="nav-links">
+	        <li class="nav-link"><a href="#">A propos</a></li>
+	        <li class="nav-link"><a href="#">Cours</a></li>
+	      </ul>
+	      </header>
+	    </div>
+	    <h1 class="Titre"><strong>Dénombrement : Arrangements</strong></h1>
+	    <h2>1) Les arrangements</h2>
+  		<div class="rounded-box"><strong class="def">Définition :</strong> Soient <i>n</i> et <i>k</i> deux entiers tels que 0 < <i>k</i> < <i>n</i>, et E un ensemble fini à <i>n</i> éléments. On appelle <i>k</i>-uplet d'éléments distincts ou arrangement une sélection de <i>k</i> objets sélectionnés parmi les objets de l'ensemble E en prenant en comptre de l'ordre.</div>
+  		<div class="rounded-box"><strong class="def">Propriétés :</strong> Soient <i>n</i> et <i>k</i> deux entiers naturels tels que 0 < <i>k</i> < <i>n</i>, et E un ensemble fini à <i>n</i> éléments, le nombre de <i>k</i>-uplets d'éléments deux à deux distincts est égal à n × ( n - 1 ) × ... × ( n-k + 1) ou n! / ( n-k )!</div>
+  		<div class="rounded-box2"><strong class="def">Exemple 1 :</strong> Une compétition de jeux vidéo oppose 6 joueurs. À la fin, un classement est établi sans ex aequo.<br><br>Combien y a-t-il de podiums possibles ?<br><br>- Il y a un ordre, un podium est un 6-uplets d'éléments distincts de E et E l'ensemble des 6 joueurs<br><br>- donc il y a 6×5×4×3×2×1 = 720 podiums possibles ou 6! / ( 6 - 6 )! = 720.</div>
+  		<div class="rounded-box2"><strong class="def">Exemple 2 :</strong> Si nous prenions une pomme rouge (R), un bleue (B) et une verte (V), combien y a-t-il de façons différentes (en gardant l'ordre) de prendre 2 pommes parmi ces 3 pommes ?<br><br>- Il y a un ordre, 2 pommes est un 2-uplets d'éléments de E et E l'ensemble des 3 pommes, il y a donc 3×2 = 6 ou 3! / ( 3 - 2 )! = 6</div>
+	</body>
+</html>

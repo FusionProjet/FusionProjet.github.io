@@ -275,3 +275,152 @@ i {
   font-family: Liberation;
   font-size: 18px;
 }
+
+
+
+@media screen and (max-width: 1000px) {
+   header .nav-links {
+     position: absolute;
+     top: 0;
+     left: 0;
+     display: flex;
+     height: 100vh;
+     width: 100vw;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     background-color: rgba(0, 0, 0, 0.95);
+     opacity: 0;
+     clip-path: circle(200px at top right);
+     transition: clip-path 0.8s 0.5s, opacity 1s 0.5s;
+  }
+   header .nav-links .nav-link {
+     margin: 1em;
+     opacity: 0;
+     transform: translateX(100%);
+     transition: opacity 0.4s ease-in-out, transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+   header .nav-links .nav-link:nth-of-type(1) {
+     transition-delay: 0.1s;
+  }
+   header .nav-links .nav-link:nth-of-type(2) {
+     transition-delay: 0.2s;
+  }
+   header .nav-links .nav-link:nth-of-type(3) {
+     transition-delay: 0.3s;
+  }
+   header .nav-links .nav-link a {
+     font-size: 2rem;
+     text-transform: uppercase;
+  }
+   header .menu-icon {
+     display: block;
+  }
+   header .menu-icon span {
+     animation: closemid 0.8s backwards;
+     animation-direction: reverse;
+  }
+   header .menu-icon span::before {
+     animation: closebtm 0.8s backwards;
+     animation-direction: reverse;
+  }
+   header .menu-icon span::after {
+     animation: closetop 0.8s backwards;
+     animation-direction: reverse;
+  }
+   header .menu-btn:checked ~ .menu-icon {
+     border-radius: 50%;
+     animation: pulse 1s;
+  }
+   header .menu-btn:checked ~ .menu-icon span {
+     animation: openmid 0.8s forwards;
+  }
+   header .menu-btn:checked ~ .menu-icon span::before {
+     animation: openbtm 0.8s forwards;
+  }
+   header .menu-btn:checked ~ .menu-icon span::after {
+     animation: opentop 0.8s forwards;
+  }
+   header .menu-btn:checked ~ .nav-links {
+     opacity: 1;
+     clip-path: circle(100% at center);
+  }
+   header .menu-btn:checked ~ .nav-links .nav-link {
+     opacity: 1;
+     transform: translateX(0);
+     transition: opacity 0.4s ease-in-out, transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+   header .menu-btn:checked ~ .nav-links .nav-link:nth-of-type(1) {
+     transition-delay: 0.7s;
+  }
+   header .menu-btn:checked ~ .nav-links .nav-link:nth-of-type(2) {
+     transition-delay: 0.8s;
+  }
+   header .menu-btn:checked ~ .nav-links .nav-link:nth-of-type(3) {
+     transition-delay: 0.9s;
+  }
+
+
+  .Titre {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+  h2 {
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+
+
+  .rounded-box {
+    font-size: 15px;
+    position: relative;
+    margin-top: 120px;
+    background-color: #25843a;
+    border-radius: 10px;
+    padding: 30px;
+    color: #fff;
+    width: 75%; /* Optionnel, définit la largeur du carré */
+    margin: auto;
+    margin-bottom: 25px ;
+  }
+
+  .separator {
+    margin: auto;
+    height: 1px; /* Définit la hauteur de la ligne */
+    width: 75%; /* Définit la largeur de la ligne */
+    background-color: #25843a; /* Définit la couleur de la ligne */
+  }
+
+  .rounded-box2 {
+    font-size: 15px;
+    position: relative;
+    margin-top: 120px;
+    background-color: #23333a;
+    border-radius: 10px;
+    padding: 30px;
+    color: #fff;
+    width: 75%; /* Optionnel, définit la largeur du carré */
+    margin: auto;
+    margin-bottom: 35px;
+  }
+
+  .rounded-box .def {
+    font-size: 17px;
+  }
+
+
+  .rounded-box2 .Astuce {
+    color: red;
+  }
+
+
+  i {
+    font-family: Liberation;
+    font-size: 17px;
+  }
+}

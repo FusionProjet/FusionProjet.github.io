@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fusion - Dénombrements</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://kit.fontawesome.com/0c87a70838.js"></script>
+		<link rel="stylesheet" type="text/css" href="binobern.css">
+	</head>
+	<body>
+		<div class="menu">
+	      <header>
+	      <a href="../index.html" class="logo"><img src="../images/Fusionlogo.png"/></a>
+	      <input type="checkbox" id="menu-btn" class="menu-btn">
+	      <label for="menu-btn" class="menu-icon"><span class="menu-icon__line"></span></label>
+	      <ul class="nav-links">
+	        <li class="nav-link"><a href="#">A propos</a></li>
+	        <li class="nav-link"><a href="#">Cours</a></li>
+	      </ul>
+	      </header>
+	    </div>
+	    <h1 class="Titre"><strong>Dénombrement : Dénombrement</strong></h1>
+	    <h2>1) Principe additif et multiplicatif</h2>
+  		<div class="rounded-box"><strong class="def">Définition :</strong> Un ensemble fini E est un ensemble ayant un nombre fini d'éléments.<br><br>Le nombre <i>n</i> d'éléments de E est appelé cardinal de E, et est noté Card(E).</div>
+		<div class="rounded-box2"><strong class="def">Exemple 1 :</strong> E= {a ; e ; i ; o ; u ; y} est un ensemble fini à 6 éléments donc Card(E) = 6.</div>
+  		<div class="rounded-box"><strong class="def">Propriétés (principe additif) :</strong> Soient A<sub>1</sub>, A<sub>2</sub>, ... , A<sub><i>p</i></sub>, <i>p</i> ensemble finis deux à deux disjoints, on a : <br><br> Card( A<sub>1</sub> ∪ A<sub>2</sub> ∪ ... ∪ A<sub><i>p</i></sub> ) = Card( A<sub>1</sub> ) + Card( A<sub>2</sub> ) + ... + Card( A<sub><i>p</i></sub> )</div>
+  		<div class="rounded-box2"><strong class="def">Exemple 2 :</strong> A est une partie de E, B son complément dans E<br><br>Card(B) = Card(E)-Card(A)</div>
+  		<div class="rounded-box"><strong class="def">Propriétés (principe multiplicatif) :</strong> Soient E et F deux ensembles non vides.<br><br>Le produit cartésien de E par F, noté E x F, est l'ensemble de couples (x,y) avec x ∈ E et y ∈ F.<br><br>Lorsque les ensembles E et F sont finis, Card(E x F) = Card(E) × Card(F).</div>
+  		<div class="rounded-box2"><strong class="def">Exemple 3 :</strong> E = {a ; b ; c} et F = {1 ; 2}<br><br>- E x F = { (a , 1) ; (a , 2) ; (b , 1) ; (b , 2) ; (c , 1) ; (c , 2) }<br><br>- F x E = { (1 , a) ; (1 , b) ; (1 , c) ; (2 , a) ; (2 , b) ; (2 , c) }<br><br>Il y a 6 éléments dans chaque ensembles et Card(E x F) = 3 × 2 = 6<br><br><br><br><span class="Astuce">Remarque : Pour le principe additif si A et B sont deux éléments d'un ensemble E on sait que Card(A ∪ B) = Card(A) + Card(B) - Card(A ∩ B)<br><br>S'ils sont disjoints, c'est la formule du dessus.</span></div>
+		<div class="separator"></div><br><br><br>
+  		<br><br>
+  		<h2>2) Le dénombrement</h2>
+  		<div class="rounded-box"><strong class="def">Propriétés :</strong> Soit E un ensemble fini à <i>n</i> éléments, <i>k</i> est un entier naturels non nul.<br><br>Un <i>k</i>-uplet de E est une liste ordonnée (x<sub>1</sub> ; x<sub>2</sub> ; ... ; x<sub><i>k</i></sub>) de <i>k</i> éléments de E.<br><br>L'ensemble de ces <i>k</i>-uplets de E est le produit cartésien E × E × E × ... × E, c'est à dire E<sup><i>k</i></sup>.<br><br>Le nombre de <i>k</i>-uplets de E est <i>n</i><sup><i>k</i></sup>, c'est à dire Card(E<sup><i>k</i></sup>) = <i>n</i><sup><i>k</i></sup></div>
+  		<div class="rounded-box2"><strong class="def">Exemple 1 :</strong> La liste des triplets de l'ensemble E = {a ; b} est (a,a,a) ; (a,a,b) ; .... (situation représentable via un arbre).<br><br>- Il y a 8 triplets de l'ensemble E car 2<sup>3</sup> = 8</div>
+  		<div class="separator"></div><br><br><br>
+  		<h2>3) Les parties d'un ensemble</h2>
+  		<div class="rounded-box"><strong class="def">Définition :</strong> Soit E un ensemble.<br><br>On dit que F est une partie de E lorsque tous les éléments de F sont éléments de E. On note F ⊂ E.</div>
+  		<div class="rounded-box2"><strong class="def">Exemple 1 :</strong> Soit E = {a ; b ; c}, on a A = {a ; b} et B = ensemble vide, ils sont des parties de E. On a donc A ⊂ E et B ⊂ E.</div>
+  		<div class="rounded-box"><strong class="def">Propriétés :</strong> Soit <i>n</i> un entier naturel et E un ensemble fini à <i>n</i> éléments.<br><br>Le nombre de partie de E est égal à 2<sup><i>n</i></sup></div>
+  		<div class="rounded-box2"><strong class="def">Exemple 2 :</strong> Le nombre de parties de E = {a ; e ; i ; o ; u} est égam à 2<sup>5</sup> = 32<br><br><br><br><span class="Astuce">Remarque : C'est le nombre de <i>n</i>-uplets de l'ensemble {0 ; 1} (oui/non)</span></div>
+	</body>
+</html>

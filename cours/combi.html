@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fusion - Combinaisons</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://kit.fontawesome.com/0c87a70838.js"></script>
+		<link rel="stylesheet" type="text/css" href="binobern.css">
+	</head>
+	<body>
+		<div class="menu">
+	      <header>
+	      <a href="../index.html" class="logo"><img src="../images/Fusionlogo.png"/></a>
+	      <input type="checkbox" id="menu-btn" class="menu-btn">
+	      <label for="menu-btn" class="menu-icon"><span class="menu-icon__line"></span></label>
+	      <ul class="nav-links">
+	        <li class="nav-link"><a href="#">A propos</a></li>
+	        <li class="nav-link"><a href="#">Cours</a></li>
+	      </ul>
+	      </header>
+	    </div>
+	    <h1 class="Titre"><strong>Dénombrement : Combinaisons</strong></h1>
+	    <h2>1) Les combinaisons</h2>
+  		<div class="rounded-box"><strong class="def">Définition :</strong> Soient <i>n</i> et <i>k</i> deux entiers naturels tels que 0 ≤ <i>k</i> ≤ <i>n</i>, et E un ensemble fini à <i>n</i> éléments<br><br>On appelle <strong>combinaison de <i>k</i> éléments parmi <i>n</i> toute partie de E à <i>k</i> éléments</strong></div>
+		<div class="rounded-box2"><strong class="def">Exemple 1 :</strong> On a la possibilité de télécharger 5 films numérotés de 1 à 5.<br><br>Le téléchargement des films 2,3 et 5 est une combinaison de 3 éléments parmi 5. C'est le même téléchargement que 2,5,5 ou 5,3,2.</div>
+  		<div class="rounded-box"><strong class="def">Propriétés :</strong> Soient <i>n</i> et <i>k</i> deux entiers tels que 0 ≤ <i>k</i> ≤ <i>n</i>.<br><br>Le nombre de combinaisons de <i>k</i> éléments parmi <i>n</i> est égal à : <i>n</i>! / ( <i>n</i> - <i>k</i> )! × <i>k</i>!<br><br><strong>Cas particulier : 0!=1 et 0 parmi <i>n</i> = 1 car il n'y a qu'une partie à 0 éléments, c'est l'ensemble vide.</strong></div>
+  		<div class="rounded-box2"><strong class="def">Exemple 2 :</strong> Dans un jeu de 32 cartes, une mains est constituée de 5 cartes.<br><br>Combien il y a t-il de mains disponibles ? Combien il y a t-il de mains contenant un valet de pique ?<br><br>- Dans une main il n'y a pas d'ordre, une main est une combinaison de 5 parmi 32 donc il y a (32×31×30×29×28) / (5×4×3×2×1) = 201'376 mains disponibles.<br><br>- On cherche une combinaison de 4 parmi 31 donc (31×30×29×28) / (4×3×2×1) = 31465 mains disponibles.</div>
+		<div class="separator"></div><br><br><br>
+  		<br><br>
+  		<h2>2) Propriétés des combinaisons</h2>
+  		<div class="rounded-box"><strong class="def">Propriétés :</strong> <i>n</i> est un entier naturel.<br><br>- 0 parmi <i>n</i> = 1<br>- 1 parmi <i>n</i> = <i>n</i><br>- 2 parmi <i>n</i> = <i>n</i> × ( <i>n</i> - 1 ) / 2<br>- <i>n</i> parmi <i>n</i> = 1<br>- Pour tout entier <i>k</i> tel que 0 ≤ <i>k</i> ≤ <i>n</i>, <i>k</i> parmi <i>n</i> = <i>n</i>-<i>k</i> parmi <i>n</i></div>
+  		<div class="rounded-box2"><strong class="def">Exemple 1 :</strong> 7 parmi 10 = 3 parmi 10 car il y a autant de façons de choisir les parties de E à 7 éléments que de partie à 3 éléments.</div>
+  		<div class="rounded-box"><strong class="def">Relation de Pascal :</strong> Pour tout entier <i>n</i> et <i>k</i> vérifiant 1 ≤ <i>k</i> ≤ <i>n-1</i> avec <i>n</i> ≥ 2, on a : <i>k</i> parmi <i>n</i> = ( <i>k</i> - 1 parmi <i>n</i> - 1 ) + ( <i>k</i> parmi <i>n</i> - 1 )<br><br><i>k</i> parmi <i>n</i> est appelé <strong>coefficiant binomial.</strong> Voici a quoi ressemble le triangle de Pascal pour n et k égal à 7 permettant de calculer les coefficiant binomial<br><br><table>
+		  <tr>
+		    <td>1</td>
+		  </tr>
+		  <tr>
+		    <td>1</td>
+		    <td>1</td>
+		  </tr>
+		  <tr>
+		    <td>1</td>
+		    <td>2</td>
+		    <td>1</td>
+		  </tr>
+		  <tr>
+		    <td>1</td>
+		    <td>3</td>
+		    <td>3</td>
+		    <td>1</td>
+		  </tr>
+		  <tr>
+		    <td>1</td>
+		    <td>4</td>
+		    <td>6</td>
+		    <td>4</td>
+		    <td>1</td>
+		  </tr>
+		  <tr>
+		    <td>1</td>
+		    <td>5</td>
+		    <td>10</td>
+		    <td>10</td>
+		    <td>5</td>
+		    <td>1</td>
+		  </tr>
+		  <tr>
+		    <td>1</td>
+		    <td>6</td>
+		    <td>15</td>
+		    <td>20</td>
+		    <td>15</td>
+		    <td>6</td>
+		    <td>1</td>
+		  </tr>
+		  <tr>
+		    <td>1</td>
+		    <td>7</td>
+		    <td>21</td>
+		    <td>35</td>
+		    <td>35</td>
+		    <td>21</td>
+		    <td>7</td>
+		    <td>1</td>
+		  </tr>
+		</table></div>
+	</body>
+</html>
