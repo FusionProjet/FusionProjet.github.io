@@ -7,7 +7,7 @@
 
 
 body {
-	background-image: url(/images/BG1.png);
+	/**background-image: url(/images/BG1.png);**/
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-color: #23333a;
